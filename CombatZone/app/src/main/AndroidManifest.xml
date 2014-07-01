@@ -1,21 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="pl.adluna.combatzone" >
-
+    <permission
+        android:name="pl.edu.pk.cybermama.app.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"/>
+    <uses-permission  android:name="pl.edu.pk.cybermama.app.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
-            android:name="pl.adluna.combatzone.MainActivity"
+            android:name=".view.activity.MenuActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".view.activity.NewsActivity" ></activity>
+        <activity android:name=".view.activity.TrainingActivity" ></activity>
+        <activity android:name=".view.activity.SeminarActivity" ></activity>
     </application>
 
 </manifest>

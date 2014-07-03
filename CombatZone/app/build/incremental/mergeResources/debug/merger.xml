@@ -8268,8 +8268,93 @@ false
                 qualifiers=""
                 type="menu" />
             <file
+                name="news"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-hdpi/news.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-hdpi/ic_launcher.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="fighterstore"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-hdpi/fighterstore.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="seminar"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-hdpi/seminar.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="page"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-hdpi/page.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="training"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-hdpi/training.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="facebook"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-hdpi/facebook.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="logo"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-hdpi/logo.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="background"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-hdpi/background.jpg"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="news"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xxhdpi/news.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
                 name="ic_launcher"
                 path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="fighterstore"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xxhdpi/fighterstore.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="seminar"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xxhdpi/seminar.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="page"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xxhdpi/page.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="training"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xxhdpi/training.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="facebook"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xxhdpi/facebook.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="logo"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xxhdpi/logo.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="background"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xxhdpi/background.jpg"
                 qualifiers="xxhdpi"
                 type="drawable" />
             <file
@@ -8279,8 +8364,48 @@ false
                 </dimen>
             </file>
             <file
+                name="news"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-mdpi/news.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
                 name="ic_launcher"
                 path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-mdpi/ic_launcher.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="fighterstore"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-mdpi/fighterstore.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="seminar"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-mdpi/seminar.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="page"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-mdpi/page.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="training"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-mdpi/training.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="facebook"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-mdpi/facebook.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="logo"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-mdpi/logo.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="background"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-mdpi/background.jpg"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
@@ -8314,18 +8439,18 @@ true
                 </string>
             </file>
             <file
-                name="ic_launcher"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xhdpi/ic_launcher.png"
-                qualifiers="xhdpi"
-                type="drawable" />
+                name="training"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/layout/training.xml"
+                qualifiers=""
+                type="layout" />
             <file
                 name="menu"
                 path="/home/nati/Adluna/CombatZone/app/src/main/res/layout/menu.xml"
                 qualifiers=""
                 type="layout" />
             <file
-                name="training"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/layout/training.xml"
+                name="news"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/layout/news.xml"
                 qualifiers=""
                 type="layout" />
             <file
@@ -8335,147 +8460,12 @@ true
                 type="layout" />
             <file
                 name="news"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/layout/news.xml"
-                qualifiers=""
-                type="layout" />
-            <file
-                name="fighterstore"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xxhdpi/fighterstore.png"
-                qualifiers="xxhdpi"
-                type="drawable" />
-            <file
-                name="background"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-mdpi/background.jpg"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="news"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-hdpi/news.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="logo"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xhdpi/logo.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="facebook"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xhdpi/facebook.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="fighterstore"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-mdpi/fighterstore.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="page"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xhdpi/page.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="training"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xxhdpi/training.png"
-                qualifiers="xxhdpi"
-                type="drawable" />
-            <file
-                name="ic_launcher"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-hdpi/ic_launcher.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="fighterstore"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-hdpi/fighterstore.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="news"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xxhdpi/news.png"
-                qualifiers="xxhdpi"
-                type="drawable" />
-            <file
-                name="seminar"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-hdpi/seminar.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="news"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-mdpi/news.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="logo"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-mdpi/logo.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="seminar"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-mdpi/seminar.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="facebook"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xxhdpi/facebook.png"
-                qualifiers="xxhdpi"
-                type="drawable" />
-            <file
-                name="news"
                 path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xhdpi/news.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
-                name="logo"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xxhdpi/logo.png"
-                qualifiers="xxhdpi"
-                type="drawable" />
-            <file
-                name="background"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-hdpi/background.jpg"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="page"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xxhdpi/page.png"
-                qualifiers="xxhdpi"
-                type="drawable" />
-            <file
-                name="logo"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-hdpi/logo.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="facebook"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-mdpi/facebook.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="page"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-hdpi/page.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="seminar"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xhdpi/seminar.png"
-                qualifiers="xhdpi"
-                type="drawable" />
-            <file
-                name="page"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-mdpi/page.png"
-                qualifiers="mdpi"
-                type="drawable" />
-            <file
-                name="background"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xxhdpi/background.jpg"
-                qualifiers="xxhdpi"
-                type="drawable" />
-            <file
-                name="training"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-hdpi/training.png"
-                qualifiers="hdpi"
-                type="drawable" />
-            <file
-                name="background"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xhdpi/background.jpg"
+                name="ic_launcher"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xhdpi/ic_launcher.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
@@ -8484,14 +8474,14 @@ true
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
-                name="training"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-mdpi/training.png"
-                qualifiers="mdpi"
+                name="seminar"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xhdpi/seminar.png"
+                qualifiers="xhdpi"
                 type="drawable" />
             <file
-                name="facebook"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-hdpi/facebook.png"
-                qualifiers="hdpi"
+                name="page"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xhdpi/page.png"
+                qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="training"
@@ -8499,9 +8489,19 @@ true
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
-                name="seminar"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xxhdpi/seminar.png"
-                qualifiers="xxhdpi"
+                name="facebook"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xhdpi/facebook.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="logo"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xhdpi/logo.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="background"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xhdpi/background.jpg"
+                qualifiers="xhdpi"
                 type="drawable" />
         </source>
         <source path="/home/nati/Adluna/CombatZone/app/build/res/rs/debug" />

@@ -2,10 +2,11 @@ package pl.adluna.combatzone.view.activity;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
+import android.widget.ImageView;
 
 import java.lang.reflect.Array;
 
@@ -22,12 +23,12 @@ public class MenuActivity extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu);
 
-        Button news = (Button) findViewById(R.id.news);
-        Button facebook =(Button) findViewById(R.id.facebook);
-        Button training = (Button) findViewById(R.id.training);
-        Button fighterstore =(Button) findViewById(R.id.fighterstore);
-        Button page = (Button) findViewById(R.id.page);
-        Button seminar =(Button) findViewById(R.id.seminar);
+        ImageView news = (ImageView) findViewById(R.id.news);
+        ImageView facebook =(ImageView) findViewById(R.id.facebook);
+        ImageView training = (ImageView) findViewById(R.id.training);
+        ImageView fighterstore =(ImageView) findViewById(R.id.fighterstore);
+        ImageView page = (ImageView) findViewById(R.id.page);
+        ImageView seminar =(ImageView) findViewById(R.id.seminar);
 
         news.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,8 +42,9 @@ public class MenuActivity extends Activity{
         facebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(),News.class);//todo
-                startActivityForResult(intent,0);
+                Uri uri = Uri.parse("https://www.facebook.com/pages/Combat-Zone/395073473912177?fref=ts");
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
             }
         });
 
@@ -57,16 +59,18 @@ public class MenuActivity extends Activity{
         fighterstore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(),News.class); //todo
-                startActivityForResult(intent,0);
+                Uri uri = Uri.parse("http://fightershop.pl/");
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
             }
         });
 
         page.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(),News.class); //todo
-                startActivityForResult(intent,0);
+                Uri uri = Uri.parse("http://combat-zone.com.pl/");
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
             }
         });
 

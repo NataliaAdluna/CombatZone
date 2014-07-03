@@ -8263,6 +8263,26 @@ false
     <dataSet config="main" >
         <source path="/home/nati/Adluna/CombatZone/app/src/main/res" >
             <file
+                name="training"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/layout-land/training.xml"
+                qualifiers="land"
+                type="layout" />
+            <file
+                name="menu"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/layout-land/menu.xml"
+                qualifiers="land"
+                type="layout" />
+            <file
+                name="news"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/layout-land/news.xml"
+                qualifiers="land"
+                type="layout" />
+            <file
+                name="seminar"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/layout-land/seminar.xml"
+                qualifiers="land"
+                type="layout" />
+            <file
                 name="main"
                 path="/home/nati/Adluna/CombatZone/app/src/main/res/menu/main.xml"
                 qualifiers=""
@@ -8290,6 +8310,11 @@ false
             <file
                 name="page"
                 path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-hdpi/page.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="background_land"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-hdpi/background_land.jpg"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
@@ -8335,6 +8360,11 @@ false
             <file
                 name="page"
                 path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xxhdpi/page.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="background_land"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xxhdpi/background_land.jpg"
                 qualifiers="xxhdpi"
                 type="drawable" />
             <file
@@ -8386,6 +8416,11 @@ false
             <file
                 name="page"
                 path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-mdpi/page.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="background_land"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-mdpi/background_land.jpg"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
@@ -8481,6 +8516,11 @@ true
             <file
                 name="page"
                 path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xhdpi/page.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="background_land"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xhdpi/background_land.jpg"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file

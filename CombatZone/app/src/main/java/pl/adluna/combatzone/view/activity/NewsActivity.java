@@ -21,6 +21,7 @@ public class NewsActivity extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.news);
 
+
         TableLayout tableLayout = (TableLayout) findViewById(R.id.news_table);
 
         List<String> news = new ArrayList<String>();
@@ -29,19 +30,22 @@ public class NewsActivity extends Activity{
 
        // while (cursor.moveToNext()) {
             String date = "11.03";
-            String info = "Dzisiaj wznawiamy treningi";
+            String info = "Dzisiaj wznawiamy tmdkem\n /trololololololololloljojojoj";
 
             TableRow tr = new TableRow(this);
 
             TextView labelDATE = new TextView(this);
             labelDATE.setText(date);
-            labelDATE.setPadding(2, 0, 5, 0);
-            labelDATE.setTextColor(Color.WHITE);
+            labelDATE.setPadding(0, 0, 2, 0);
+            labelDATE.setTextColor(Color.BLACK);
+            labelDATE.setTextSize(15);
             tr.addView(labelDATE);
 
             TextView labelNEWS = new TextView(this);
             labelNEWS.setText(info);
-            labelNEWS.setTextColor(Color.WHITE);
+            labelNEWS.setPadding(0,0,0,15);
+            labelNEWS.setTextColor(Color.BLACK);
+            labelNEWS.setTextSize(15);
             tr.addView(labelNEWS);
 
             // finally add this to the table row

@@ -950,7 +950,7 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f070015;
         public static final int action_menu_presenter=0x7f070016;
         public static final int action_mode_close_button=0x7f070024;
-        public static final int action_settings=0x7f070049;
+        public static final int action_settings=0x7f07004a;
         public static final int activity_chooser_view_content=0x7f070025;
         public static final int always=0x7f07000f;
         public static final int beginning=0x7f07000a;
@@ -981,6 +981,7 @@ containing a value of this type.
         public static final int none=0x7f070009;
         public static final int normal=0x7f070000;
         public static final int page=0x7f070043;
+        public static final int picture=0x7f070047;
         public static final int progress_circular=0x7f070018;
         public static final int progress_horizontal=0x7f070019;
         public static final int radio=0x7f07002f;
@@ -995,7 +996,7 @@ containing a value of this type.
         public static final int search_src_text=0x7f070037;
         public static final int search_voice_btn=0x7f07003b;
         public static final int seminar=0x7f070042;
-        public static final int seminar_text=0x7f070047;
+        public static final int seminar_text=0x7f070048;
         public static final int shortcut=0x7f07002e;
         public static final int showCustom=0x7f070007;
         public static final int showHome=0x7f070004;
@@ -1009,7 +1010,7 @@ containing a value of this type.
         public static final int tmp2=0x7f070044;
         public static final int top_action_bar=0x7f070020;
         public static final int training=0x7f070040;
-        public static final int training_table=0x7f070048;
+        public static final int training_table=0x7f070049;
         public static final int up=0x7f070021;
         public static final int useLogo=0x7f070003;
         public static final int withText=0x7f070010;

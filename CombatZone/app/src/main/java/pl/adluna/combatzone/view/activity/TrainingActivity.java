@@ -7,104 +7,124 @@ import android.os.Bundle;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import pl.adluna.combatzone.R;
+import pl.adluna.combatzone.model.Hours;
+import pl.adluna.combatzone.model.News;
+import pl.adluna.combatzone.model.Training;
+import pl.adluna.combatzone.model.TrainingTable;
+import pl.adluna.combatzone.model.network.GetNewsTask;
 import pl.adluna.combatzone.model.network.GetTrainingTask;
 
 /**
  * Created by Natalia Stawowy on 01.07.14.
  */
 public class TrainingActivity extends Activity {
-  
+    final TrainingTable trainingTable = new TrainingTable();
+
+    private String[] days = {"Pon", "Wt", "Sr", "Czw", "Pt", "Sob", "Nd"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.training);
-
-        TableLayout tableLayout = (TableLayout) findViewById(R.id.training_table);
-
-        try {
-            GetTrainingTask getCords = new GetTrainingTask("http://www.adluna.webd.pl/combatzone_panel/selectaktualnosci.php") {
-                @Override
-                public void onPostExecute(JSONObject obj) {
-                    try {
-                        Context context = getApplicationContext();
-                        CharSequence text = obj.getString("a");
-                        int duration = Toast.LENGTH_SHORT;
-
-                        Toast toast = Toast.makeText(context, text, duration);
-                        toast.show();
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
+        final TableLayout tableLayout = (TableLayout) findViewById(R.id.training_table);
+        final Context con = this;
+        GetTrainingTask getTrainingTask = new GetTrainingTask("http://www.adluna.webd.pl/combatzone_panel/selecttreningi.php") {
+            @Override
+            public void onPostExecute(JSONObject obj) {
+                JSONArray jArray = new JSONArray();
+                try {
+                    jArray = obj.getJSONArray("treningi");
+                } catch (JSONException e) {
+                    e.printStackTrace();
                 }
-            };
-            getCords.execute();
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-        }
 
-    }
+               final Map<String,Hours> hours = trainingTable.jsonToTable(jArray);
+                TableRow tr = new TableRow(con);
+                TextView labelDATE1 = new TextView(con);
+                labelDATE1.setText("");
+                labelDATE1.setTextColor(Color.BLACK);
+                labelDATE1.setTextSize(15);
+                labelDATE1.setEllipsize(null);
+                labelDATE1.setMaxLines(2);
+                labelDATE1.setSingleLine(false);
+                tr.addView(labelDATE1);
 
- /*       List<String> news = new ArrayList<String>();
-        news.add("trololo");
-        news.add("jojojoj");
-        Integer count=0;
-        // while (cursor.moveToNext()) {
+                TextView labelHOUR1 = new TextView(con);
+                labelHOUR1.setText("Gr. 1");
+                labelHOUR1.setTextColor(Color.BLACK);
+                labelHOUR1.setTextSize(15);
+                labelHOUR1.setEllipsize(null);
+                labelHOUR1.setMaxLines(2);
+                labelHOUR1.setSingleLine(false);
+                tr.addView(labelHOUR1);
 
-        String info = "20:30";
+                TextView labelHOUR2 = new TextView(con);
+                labelHOUR2.setText("Gr. 2");
+                labelHOUR2.setTextColor(Color.BLACK);
+                labelHOUR2.setTextSize(15);
+                labelHOUR2.setEllipsize(null);
+                labelHOUR2.setMaxLines(2);
+                labelHOUR2.setSingleLine(false);
+                tr.addView(labelHOUR2);
+                tableLayout.addView(tr, new TableLayout.LayoutParams(
+                        TableLayout.LayoutParams.WRAP_CONTENT,
+                        TableLayout.LayoutParams.WRAP_CONTENT));
+               for (int i=0; i<7; i++) {
+                   if(hours.get(days[i])!=null){
+                       if(!(hours.get(days[i]).getHour1()==""&&hours.get(days[i]).getHour2()=="")) {
+                           String date = days[i];
+                           String hour1 = hours.get(days[i]).getHour1();
+                           String hour2 = hours.get(days[i]).getHour2();
 
-        TableRow tr = new TableRow(this);
+                           tr = new TableRow(con);
 
-        TextView labelDATE = new TextView(this);
-        labelDATE.setText(date);
-        labelDATE.setPadding(2, 0, 5, 0);
-        labelDATE.setTextColor(Color.WHITE);
-        labelDATE.setTextSize(30);
-        tr.addView(labelDATE);
+                           labelDATE1 = new TextView(con);
+                           labelDATE1.setText(date);
+                           labelDATE1.setTextColor(Color.BLACK);
+                           labelDATE1.setTextSize(15);
+                           labelDATE1.setEllipsize(null);
+                           labelDATE1.setMaxLines(2);
+                           labelDATE1.setSingleLine(false);
+                           tr.addView(labelDATE1);
 
-        TextView labelNEWS = new TextView(this);
-        labelNEWS.setText(info);
-        labelNEWS.setTextColor(Color.WHITE);
-        labelNEWS.setTextSize(30);
-        tr.addView(labelNEWS);
+                           labelHOUR1 = new TextView(con);
+                           labelHOUR1.setText(hour1);
+                           labelHOUR1.setTextColor(Color.BLACK);
+                           labelHOUR1.setTextSize(15);
+                           labelHOUR1.setEllipsize(null);
+                           labelHOUR1.setMaxLines(2);
+                           labelHOUR1.setSingleLine(false);
+                           tr.addView(labelHOUR1);
 
-        // finally add this to the table row
-        tableLayout.addView(tr, new TableLayout.LayoutParams(
-                TableLayout.LayoutParams.WRAP_CONTENT,
-                TableLayout.LayoutParams.WRAP_CONTENT));
-        // }
-        try {
-            Class.forName("com.mysql.jdbc.Driver").newInstance();
-            Connection con = DriverManager.getConnection(url, user, pass);
+                           labelHOUR2 = new TextView(con);
+                           labelHOUR2.setText(hour2);
+                           labelHOUR2.setTextColor(Color.BLACK);
+                           labelHOUR2.setTextSize(15);
+                           labelHOUR2.setEllipsize(null);
+                           labelHOUR2.setMaxLines(2);
+                           labelHOUR2.setSingleLine(false);
+                           tr.addView(labelHOUR2);
 
-            Statement st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
-            ResultSet rs = st.executeQuery("select * from GRUPY");
+                           tableLayout.addView(tr, new TableLayout.LayoutParams(
+                                   TableLayout.LayoutParams.WRAP_CONTENT,
+                                   TableLayout.LayoutParams.WRAP_CONTENT));
+                       }
 
-            while(rs.next())
-            {
-                Context context = getApplicationContext();
-                CharSequence text = rs.getString("GRUPA");
-                int duration = Toast.LENGTH_SHORT;
-
-                Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
+                   }
+               }
             }
-        }
-        catch(Exception e) {
-            e.printStackTrace();
-        }*/
+        };
+        getTrainingTask.execute();
+        new GetTrainingTask("http://www.adluna.webd.pl/combatzone_panel/selecttreningi.php");
     }
-
+}

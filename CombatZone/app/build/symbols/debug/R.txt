@@ -255,7 +255,7 @@ int id action_context_bar 0x7f07001d
 int id action_menu_divider 0x7f070015
 int id action_menu_presenter 0x7f070016
 int id action_mode_close_button 0x7f070024
-int id action_settings 0x7f070049
+int id action_settings 0x7f07004a
 int id activity_chooser_view_content 0x7f070025
 int id always 0x7f07000f
 int id beginning 0x7f07000a
@@ -286,6 +286,7 @@ int id news_table 0x7f070045
 int id none 0x7f070009
 int id normal 0x7f070000
 int id page 0x7f070043
+int id picture 0x7f070047
 int id progress_circular 0x7f070018
 int id progress_horizontal 0x7f070019
 int id radio 0x7f07002f
@@ -300,7 +301,7 @@ int id search_plate 0x7f070036
 int id search_src_text 0x7f070037
 int id search_voice_btn 0x7f07003b
 int id seminar 0x7f070042
-int id seminar_text 0x7f070047
+int id seminar_text 0x7f070048
 int id shortcut 0x7f07002e
 int id showCustom 0x7f070007
 int id showHome 0x7f070004
@@ -314,7 +315,7 @@ int id tmp1 0x7f07003d
 int id tmp2 0x7f070044
 int id top_action_bar 0x7f070020
 int id training 0x7f070040
-int id training_table 0x7f070048
+int id training_table 0x7f070049
 int id up 0x7f070021
 int id useLogo 0x7f070003
 int id withText 0x7f070010

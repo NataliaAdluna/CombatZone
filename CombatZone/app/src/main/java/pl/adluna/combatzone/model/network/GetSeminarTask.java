@@ -21,12 +21,12 @@ import java.util.List;
 /**
  * Created by Natalia Stawowy on 04.07.14.
  */
-public class GetTrainingTask extends AsyncTask<String, String, JSONObject> {
+public class GetSeminarTask extends AsyncTask<String, String, JSONObject> {
     private HttpClient httpClient;
     private HttpPost httpPost;
     private String url;
 
-    public GetTrainingTask(String url) {
+    public GetSeminarTask(String url) {
         this.url = url;
     }
 

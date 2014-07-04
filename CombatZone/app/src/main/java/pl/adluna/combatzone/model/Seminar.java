@@ -5,6 +5,15 @@ package pl.adluna.combatzone.model;
  */
 public class Seminar {
    private String description;
+    private String foto;
+
+    public String getFoto() {
+        return foto;
+    }
+
+    public void setFoto(String foto) {
+        this.foto = foto;
+    }
 
     public String getDescription() {
         return description;

@@ -30,13 +30,10 @@ public class GetTrainingTask extends AsyncTask<String, String, JSONObject> {
         this.url = url;
     }
 
-    /**
-     * Login authorization
-     */
     @Override
     protected JSONObject doInBackground(String... arg0) {
-        httpClient = new DefaultHttpClient();
         httpPost = new HttpPost(url);
+        httpClient = new DefaultHttpClient();
         HttpResponse httpResponse;
         BufferedReader br = null;
         try {

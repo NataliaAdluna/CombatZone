@@ -8468,9 +8468,35 @@ true
                 qualifiers="" >
                 <string name="hello_world" >Hello world!
                 </string>
+                <string name="news" >http://www.adluna.webd.pl/combatzone_panel/selectaktualnosci.php
+                </string>
+                <string name="newsLabel" >news
+                </string>
                 <string name="action_settings" >Settings
                 </string>
                 <string name="app_name" >CombatZone
+                </string>
+                <string name="facebook" >https://www.facebook.com/pages/Combat-Zone/395073473912177?fref=ts
+                </string>
+                <string name="foto" >foto
+                </string>
+                <string name="training" >http://www.adluna.webd.pl/combatzone_panel/selecttreningi.php
+                </string>
+                <string name="combatzone" >http://combat-zone.com.pl/
+                </string>
+                <string name="seminarLabel" >seminarium
+                </string>
+                <string name="fightershop" >http://fightershop.pl/
+                </string>
+                <string name="description" >opis
+                </string>
+                <string name="trainingLabel" >treningi
+                </string>
+                <string name="dateLabel" >data
+                </string>
+                <string name="seminar" >http://www.adluna.webd.pl/combatzone_panel/selectseminarium.php
+                </string>
+                <string name="text" >text
                 </string>
             </file>
             <file

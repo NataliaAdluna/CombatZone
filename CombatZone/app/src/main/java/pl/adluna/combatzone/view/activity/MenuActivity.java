@@ -5,14 +5,10 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 
-import java.lang.reflect.Array;
-
 import pl.adluna.combatzone.R;
-import pl.adluna.combatzone.model.News;
-import pl.adluna.combatzone.model.Training;
+
 
 /**
  * Created by Natalia Stawowy on 01.07.14.
@@ -42,7 +38,7 @@ public class MenuActivity extends Activity{
         facebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Uri uri = Uri.parse("https://www.facebook.com/pages/Combat-Zone/395073473912177?fref=ts");
+                Uri uri = Uri.parse(getString(R.string.facebook));
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
             }
@@ -59,7 +55,7 @@ public class MenuActivity extends Activity{
         fighterstore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Uri uri = Uri.parse("http://fightershop.pl/");
+                Uri uri = Uri.parse(getString(R.string.fightershop));
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
             }
@@ -68,7 +64,7 @@ public class MenuActivity extends Activity{
         page.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Uri uri = Uri.parse("http://combat-zone.com.pl/");
+                Uri uri = Uri.parse(getString(R.string.combatzone));
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
             }

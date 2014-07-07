@@ -16,7 +16,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import pl.adluna.combatzone.R;
-import pl.adluna.combatzone.controller.Controller;
 import pl.adluna.combatzone.model.News;
 import pl.adluna.combatzone.model.network.GetNewsTask;
 
@@ -32,12 +31,12 @@ public class NewsActivity extends Activity {
         setContentView(R.layout.news);
         final TableLayout tableLayout = (TableLayout) findViewById(R.id.news_table);
         final Context con = this;
-        GetNewsTask getNewsTask = new GetNewsTask("http://www.adluna.webd.pl/combatzone_panel/selectaktualnosci.php") {
+        GetNewsTask getNewsTask = new GetNewsTask(getString(R.string.news)) {
             @Override
             public void onPostExecute(JSONObject obj) {
                 JSONArray jArray = new JSONArray();
                 try {
-                    jArray = obj.getJSONArray("news");
+                    jArray = obj.getJSONArray(getString(R.string.newsLabel));
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -45,8 +44,8 @@ public class NewsActivity extends Activity {
                     try {
                         JSONObject object = jArray.getJSONObject(i);
                         News news = new News();
-                        news.setDate(object.get("data").toString().substring(9,10)+"."+object.get("data").toString().substring(5,7));
-                        news.setText(object.get("text").toString());
+                        news.setDate(object.get(getString(R.string.dateLabel)).toString().substring(9,10)+"."+object.get(getString(R.string.dateLabel)).toString().substring(5,7));
+                        news.setText(object.get(getString(R.string.text)).toString());
                         newsList.add(news);
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -86,7 +85,7 @@ public class NewsActivity extends Activity {
         };
         getNewsTask.execute();
 
-        new GetNewsTask("http://www.adluna.webd.pl/combatzone_panel/selectaktualnosci.php").execute();
+        new GetNewsTask(getString(R.string.news)).execute();
 
 
 

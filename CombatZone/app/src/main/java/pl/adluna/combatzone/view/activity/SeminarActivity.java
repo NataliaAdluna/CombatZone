@@ -34,13 +34,13 @@ public class SeminarActivity extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.seminar);
 
-        GetSeminarTask getSeminarTask = new GetSeminarTask("http://www.adluna.webd.pl/combatzone_panel/selectseminarium.php") {
+        GetSeminarTask getSeminarTask = new GetSeminarTask(getString(R.string.seminar)) {
             @Override
             public void onPostExecute(JSONObject obj) {
                 JSONArray jArray = new JSONArray();
                 Seminar seminar = new Seminar();
                 try {
-                    jArray = obj.getJSONArray("seminarium");
+                    jArray = obj.getJSONArray(getString(R.string.seminarLabel));
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -48,8 +48,8 @@ public class SeminarActivity extends Activity{
                     try {
                         JSONObject object = jArray.getJSONObject(i);
 
-                        seminar.setDescription(object.get("opis").toString());
-                        seminar.setFoto(object.get("foto").toString());
+                        seminar.setDescription(object.get(getString(R.string.description)).toString());
+                        seminar.setFoto(object.get(getString(R.string.foto)).toString());
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -70,7 +70,7 @@ public class SeminarActivity extends Activity{
         };
         getSeminarTask.execute();
 
-        new GetSeminarTask("http://www.adluna.webd.pl/combatzone_panel/selectseminarium.php").execute();
+        new GetSeminarTask(getString(R.string.seminar)).execute();
 
 
 

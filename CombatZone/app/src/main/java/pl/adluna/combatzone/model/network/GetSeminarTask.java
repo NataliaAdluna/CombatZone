@@ -30,9 +30,6 @@ public class GetSeminarTask extends AsyncTask<String, String, JSONObject> {
         this.url = url;
     }
 
-    /**
-     * Login authorization
-     */
     @Override
     protected JSONObject doInBackground(String... arg0) {
         httpClient = new DefaultHttpClient();
@@ -40,13 +37,6 @@ public class GetSeminarTask extends AsyncTask<String, String, JSONObject> {
         HttpResponse httpResponse;
         BufferedReader br = null;
         try {
-            List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
-            nameValuePairs.add(new BasicNameValuePair("login", "admin"));
-            nameValuePairs.add(new BasicNameValuePair("haslo", "admin"));
-            /**
-             * Http post to server
-             */
-            httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
             httpResponse = httpClient.execute(httpPost);
             int status = httpResponse.getStatusLine().getStatusCode();
 
@@ -55,7 +45,7 @@ public class GetSeminarTask extends AsyncTask<String, String, JSONObject> {
                         .getEntity().getContent()));
                 return new JSONObject(br.readLine());
             } else {
-                Log.e("Login error", "Login error");
+                Log.e("Error", "Error");
             }
         } catch (Exception e) {
             Log.e("HTTP Failed", e.toString());

@@ -12,17 +12,11 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import pl.adluna.combatzone.R;
 import pl.adluna.combatzone.model.Hours;
-import pl.adluna.combatzone.model.News;
-import pl.adluna.combatzone.model.Training;
 import pl.adluna.combatzone.model.TrainingTable;
-import pl.adluna.combatzone.model.network.GetNewsTask;
 import pl.adluna.combatzone.model.network.GetTrainingTask;
 
 /**
@@ -38,12 +32,12 @@ public class TrainingActivity extends Activity {
         setContentView(R.layout.training);
         final TableLayout tableLayout = (TableLayout) findViewById(R.id.training_table);
         final Context con = this;
-        GetTrainingTask getTrainingTask = new GetTrainingTask("http://www.adluna.webd.pl/combatzone_panel/selecttreningi.php") {
+        GetTrainingTask getTrainingTask = new GetTrainingTask(getString(R.string.training)) {
             @Override
             public void onPostExecute(JSONObject obj) {
                 JSONArray jArray = new JSONArray();
                 try {
-                    jArray = obj.getJSONArray("treningi");
+                    jArray = obj.getJSONArray(getString(R.string.trainingLabel));
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -125,6 +119,6 @@ public class TrainingActivity extends Activity {
             }
         };
         getTrainingTask.execute();
-        new GetTrainingTask("http://www.adluna.webd.pl/combatzone_panel/selecttreningi.php");
+        new GetTrainingTask(getString(R.string.training));
     }
 }

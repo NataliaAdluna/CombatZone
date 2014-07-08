@@ -25,6 +25,10 @@
         <activity android:name=".view.activity.NewsActivity" ></activity>
         <activity android:name=".view.activity.TrainingActivity" ></activity>
         <activity android:name=".view.activity.SeminarActivity" ></activity>
+        <activity android:name=".view.activity.ImageGalleryActivity" ></activity>
+        <activity android:name=".view.activity.VideoActivity" ></activity>
     </application>
-
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="8"/>
 </manifest>

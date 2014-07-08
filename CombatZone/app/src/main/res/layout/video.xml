@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background"
+    android:weightSum="18">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:id="@+id/logo"
+        android:src="@drawable/logo"
+        android:adjustViewBounds="true"
+        android:layout_weight="3"/>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_weight="14"
+        android:weightSum="12">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tmp1"
+            android:adjustViewBounds="true"
+            android:layout_weight="1"/>
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:background="#CFFFFFFF"
+            android:layout_weight="10"
+            >
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:stretchColumns="0,1"
+                android:shrinkColumns="1"
+                android:id="@+id/video_table"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:adjustViewBounds="true"
+                android:gravity="center_horizontal" />
+        </ScrollView>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tmp2"
+            android:adjustViewBounds="true"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:id="@+id/tmp"
+        android:adjustViewBounds="true"
+        android:layout_weight="1"/>
+</LinearLayout>
+

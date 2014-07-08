@@ -8283,11 +8283,6 @@ false
                 qualifiers="land"
                 type="layout" />
             <file
-                name="main"
-                path="/home/nati/Adluna/CombatZone/app/src/main/res/menu/main.xml"
-                qualifiers=""
-                type="menu" />
-            <file
                 name="news"
                 path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-hdpi/news.png"
                 qualifiers="hdpi"
@@ -8466,23 +8461,43 @@ true
             <file
                 path="/home/nati/Adluna/CombatZone/app/src/main/res/values/strings.xml"
                 qualifiers="" >
-                <string name="hello_world" >Hello world!
-                </string>
                 <string name="news" >http://www.adluna.webd.pl/combatzone_panel/selectaktualnosci.php
                 </string>
                 <string name="newsLabel" >news
                 </string>
-                <string name="action_settings" >Settings
+                <string name="title" >tytul
                 </string>
-                <string name="app_name" >CombatZone
+                <string name="video" >http://www.adluna.webd.pl/combatzone_panel/selectlinki.php
                 </string>
                 <string name="facebook" >https://www.facebook.com/pages/Combat-Zone/395073473912177?fref=ts
                 </string>
                 <string name="foto" >foto
                 </string>
-                <string name="training" >http://www.adluna.webd.pl/combatzone_panel/selecttreningi.php
+                <string name="loadingVideo" >Trwa ładowanie video, proszę czekać
                 </string>
                 <string name="combatzone" >http://combat-zone.com.pl/
+                </string>
+                <string name="loading" >Trwa ładowanie obrazów, proszę czekać
+                </string>
+                <string name="galleryLabel" >galeria
+                </string>
+                <string name="hello_world" >Hello world!
+                </string>
+                <string name="navi_url" >https://www.google.pl/maps/place/Basen+AGH/@50.06819,19.900559,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x8238af568ff8e769
+                </string>
+                <string name="videoLabel" >linki
+                </string>
+                <string name="action_settings" >Settings
+                </string>
+                <string name="app_name" >CombatZone
+                </string>
+                <string name="link" >link
+                </string>
+                <string name="img" >img
+                </string>
+                <string name="training" >http://www.adluna.webd.pl/combatzone_panel/selecttreningi.php
+                </string>
+                <string name="gallery" >http://www.adluna.webd.pl/combatzone_panel/selectgaleria.php
                 </string>
                 <string name="seminarLabel" >seminarium
                 </string>
@@ -8567,6 +8582,106 @@ true
             <file
                 name="background"
                 path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xhdpi/background.jpg"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="navi"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xhdpi/navi.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="play"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xhdpi/play.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="navi"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-mdpi/navi.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="navi"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xxhdpi/navi.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="play"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xxhdpi/play.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="foto"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-mdpi/foto.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="play"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-mdpi/play.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="foto"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xhdpi/foto.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="foto"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-hdpi/foto.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="foto"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xxhdpi/foto.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="navi"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-hdpi/navi.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="play"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-hdpi/play.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="pictures"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/layout-land/pictures.xml"
+                qualifiers="land"
+                type="layout" />
+            <file
+                name="pictures"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/layout/pictures.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="video"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/layout/video.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="video"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/layout-land/video.xml"
+                qualifiers="land"
+                type="layout" />
+            <file
+                name="youtube"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-mdpi/youtube.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="youtube"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-hdpi/youtube.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="youtube"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xxhdpi/youtube.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="youtube"
+                path="/home/nati/Adluna/CombatZone/app/src/main/res/drawable-xhdpi/youtube.png"
                 qualifiers="xhdpi"
                 type="drawable" />
         </source>

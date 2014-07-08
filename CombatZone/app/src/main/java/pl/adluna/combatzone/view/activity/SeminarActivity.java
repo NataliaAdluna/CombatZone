@@ -4,25 +4,17 @@ import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
-import android.media.Image;
 import android.os.Bundle;
 import android.util.Base64;
 import android.widget.ImageView;
-import android.widget.TableLayout;
-import android.widget.TableRow;
 import android.widget.TextView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import pl.adluna.combatzone.R;
-import pl.adluna.combatzone.model.News;
 import pl.adluna.combatzone.model.Seminar;
-import pl.adluna.combatzone.model.network.GetNewsTask;
 import pl.adluna.combatzone.model.network.GetSeminarTask;
 
 /**
@@ -61,7 +53,7 @@ public class SeminarActivity extends Activity{
                 textView.setText(description);
                 textView.setTextColor(Color.BLACK);
 
-                ImageView imageView = (ImageView) findViewById(R.id.picture);
+                ImageView imageView = (ImageView) findViewById(R.id.foto);
                 byte[] decodedString = Base64.decode(foto, Base64.DEFAULT);
                 Bitmap decode = BitmapFactory.decodeByteArray(decodedString,0,decodedString.length);
                 imageView.setImageBitmap(decode);

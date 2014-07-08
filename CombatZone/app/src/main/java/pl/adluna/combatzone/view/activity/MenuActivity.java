@@ -22,10 +22,38 @@ public class MenuActivity extends Activity{
         ImageView news = (ImageView) findViewById(R.id.news);
         ImageView facebook =(ImageView) findViewById(R.id.facebook);
         ImageView training = (ImageView) findViewById(R.id.training);
-        ImageView fighterstore =(ImageView) findViewById(R.id.fighterstore);
+       // ImageView fighterstore =(ImageView) findViewById(R.id.fighterstore);
         ImageView page = (ImageView) findViewById(R.id.page);
         ImageView seminar =(ImageView) findViewById(R.id.seminar);
+        ImageView navi =(ImageView) findViewById(R.id.navigation);
+        ImageView foto = (ImageView) findViewById(R.id.foto);
+        ImageView play =(ImageView) findViewById(R.id.movies);
 
+        play.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(),VideoActivity.class);
+                startActivityForResult(intent, 0);
+
+            }
+        });
+        foto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(),ImageGalleryActivity.class);
+                startActivityForResult(intent,0);
+
+            }
+        });
+        navi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri uri = Uri.parse(getString(R.string.navi_url));
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+
+            }
+        });
         news.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -52,14 +80,14 @@ public class MenuActivity extends Activity{
             }
         });
 
-        fighterstore.setOnClickListener(new View.OnClickListener() {
+      /*  fighterstore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Uri uri = Uri.parse(getString(R.string.fightershop));
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
             }
-        });
+        });*/
 
         page.setOnClickListener(new View.OnClickListener() {
             @Override

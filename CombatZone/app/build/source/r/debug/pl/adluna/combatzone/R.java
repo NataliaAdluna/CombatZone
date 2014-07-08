@@ -931,12 +931,16 @@ containing a value of this type.
         public static final int background_land=0x7f020058;
         public static final int facebook=0x7f020059;
         public static final int fighterstore=0x7f02005a;
-        public static final int ic_launcher=0x7f02005b;
-        public static final int logo=0x7f02005c;
-        public static final int news=0x7f02005d;
-        public static final int page=0x7f02005e;
-        public static final int seminar=0x7f02005f;
-        public static final int training=0x7f020060;
+        public static final int foto=0x7f02005b;
+        public static final int ic_launcher=0x7f02005c;
+        public static final int logo=0x7f02005d;
+        public static final int navi=0x7f02005e;
+        public static final int news=0x7f02005f;
+        public static final int page=0x7f020060;
+        public static final int play=0x7f020061;
+        public static final int seminar=0x7f020062;
+        public static final int training=0x7f020063;
+        public static final int youtube=0x7f020064;
     }
     public static final class id {
         public static final int action_bar=0x7f07001c;
@@ -950,7 +954,6 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f070015;
         public static final int action_menu_presenter=0x7f070016;
         public static final int action_mode_close_button=0x7f070024;
-        public static final int action_settings=0x7f07004a;
         public static final int activity_chooser_view_content=0x7f070025;
         public static final int always=0x7f07000f;
         public static final int beginning=0x7f07000a;
@@ -965,7 +968,8 @@ containing a value of this type.
         public static final int expand_activities_button=0x7f070026;
         public static final int expanded_menu=0x7f07002c;
         public static final int facebook=0x7f07003f;
-        public static final int fighterstore=0x7f070041;
+        public static final int foto=0x7f070047;
+        public static final int gallery=0x7f07004b;
         public static final int home=0x7f070017;
         public static final int homeAsUp=0x7f070005;
         public static final int icon=0x7f07002a;
@@ -974,14 +978,17 @@ containing a value of this type.
         public static final int listMode=0x7f070001;
         public static final int list_item=0x7f070029;
         public static final int logo=0x7f07003c;
+        public static final int menu_bottom=0x7f070044;
         public static final int middle=0x7f07000b;
+        public static final int movies=0x7f070046;
+        public static final int navigation=0x7f070045;
         public static final int never=0x7f07000d;
         public static final int news=0x7f07003e;
-        public static final int news_table=0x7f070045;
+        public static final int news_table=0x7f070048;
         public static final int none=0x7f070009;
         public static final int normal=0x7f070000;
-        public static final int page=0x7f070043;
-        public static final int picture=0x7f070047;
+        public static final int page=0x7f070042;
+        public static final int picture_switcher=0x7f07004a;
         public static final int progress_circular=0x7f070018;
         public static final int progress_horizontal=0x7f070019;
         public static final int radio=0x7f07002f;
@@ -995,8 +1002,8 @@ containing a value of this type.
         public static final int search_plate=0x7f070036;
         public static final int search_src_text=0x7f070037;
         public static final int search_voice_btn=0x7f07003b;
-        public static final int seminar=0x7f070042;
-        public static final int seminar_text=0x7f070048;
+        public static final int seminar=0x7f070041;
+        public static final int seminar_text=0x7f07004c;
         public static final int shortcut=0x7f07002e;
         public static final int showCustom=0x7f070007;
         public static final int showHome=0x7f070004;
@@ -1005,14 +1012,15 @@ containing a value of this type.
         public static final int submit_area=0x7f070039;
         public static final int tabMode=0x7f070002;
         public static final int title=0x7f07002b;
-        public static final int tmp=0x7f070046;
+        public static final int tmp=0x7f070049;
         public static final int tmp1=0x7f07003d;
-        public static final int tmp2=0x7f070044;
+        public static final int tmp2=0x7f070043;
         public static final int top_action_bar=0x7f070020;
         public static final int training=0x7f070040;
-        public static final int training_table=0x7f070049;
+        public static final int training_table=0x7f07004d;
         public static final int up=0x7f070021;
         public static final int useLogo=0x7f070003;
+        public static final int video_table=0x7f07004e;
         public static final int withText=0x7f070010;
     }
     public static final class integer {
@@ -1045,12 +1053,11 @@ containing a value of this type.
         public static final int abc_simple_decor=0x7f030017;
         public static final int menu=0x7f030018;
         public static final int news=0x7f030019;
-        public static final int seminar=0x7f03001a;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001b;
-        public static final int training=0x7f03001c;
-    }
-    public static final class menu {
-        public static final int main=0x7f0c0000;
+        public static final int pictures=0x7f03001a;
+        public static final int seminar=0x7f03001b;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001c;
+        public static final int training=0x7f03001d;
+        public static final int video=0x7f03001e;
     }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f0a0000;
@@ -1074,14 +1081,24 @@ containing a value of this type.
         public static final int facebook=0x7f0a0012;
         public static final int fightershop=0x7f0a0013;
         public static final int foto=0x7f0a0014;
-        public static final int hello_world=0x7f0a0015;
-        public static final int news=0x7f0a0016;
-        public static final int newsLabel=0x7f0a0017;
-        public static final int seminar=0x7f0a0018;
-        public static final int seminarLabel=0x7f0a0019;
-        public static final int text=0x7f0a001a;
-        public static final int training=0x7f0a001b;
-        public static final int trainingLabel=0x7f0a001c;
+        public static final int gallery=0x7f0a0015;
+        public static final int galleryLabel=0x7f0a0016;
+        public static final int hello_world=0x7f0a0017;
+        public static final int img=0x7f0a0018;
+        public static final int link=0x7f0a0019;
+        public static final int loading=0x7f0a001a;
+        public static final int loadingVideo=0x7f0a001b;
+        public static final int navi_url=0x7f0a001c;
+        public static final int news=0x7f0a001d;
+        public static final int newsLabel=0x7f0a001e;
+        public static final int seminar=0x7f0a001f;
+        public static final int seminarLabel=0x7f0a0020;
+        public static final int text=0x7f0a0021;
+        public static final int title=0x7f0a0022;
+        public static final int training=0x7f0a0023;
+        public static final int trainingLabel=0x7f0a0024;
+        public static final int video=0x7f0a0025;
+        public static final int videoLabel=0x7f0a0026;
     }
     public static final class style {
         public static final int AppTheme=0x7f0b0000;

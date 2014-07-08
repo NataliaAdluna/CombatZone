@@ -553,14 +553,24 @@
     <string name="facebook">https://www.facebook.com/pages/Combat-Zone/395073473912177?fref=ts</string>
     <string name="fightershop">http://fightershop.pl/</string>
     <string name="foto">foto</string>
+    <string name="gallery">http://www.adluna.webd.pl/combatzone_panel/selectgaleria.php</string>
+    <string name="galleryLabel">galeria</string>
     <string name="hello_world">Hello world!</string>
+    <string name="img">img</string>
+    <string name="link">link</string>
+    <string name="loading">Trwa ładowanie obrazów, proszę czekać</string>
+    <string name="loadingVideo">Trwa ładowanie video, proszę czekać</string>
+    <string name="navi_url">https://www.google.pl/maps/place/Basen+AGH/@50.06819,19.900559,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x8238af568ff8e769</string>
     <string name="news">http://www.adluna.webd.pl/combatzone_panel/selectaktualnosci.php</string>
     <string name="newsLabel">news</string>
     <string name="seminar">http://www.adluna.webd.pl/combatzone_panel/selectseminarium.php</string>
     <string name="seminarLabel">seminarium</string>
     <string name="text">text</string>
+    <string name="title">tytul</string>
     <string name="training">http://www.adluna.webd.pl/combatzone_panel/selecttreningi.php</string>
     <string name="trainingLabel">treningi</string>
+    <string name="video">http://www.adluna.webd.pl/combatzone_panel/selectlinki.php</string>
+    <string name="videoLabel">linki</string>
     <!-- From: file:/home/nati/Adluna/CombatZone/app/src/main/res/values/styles.xml -->
     <eat-comment />
 

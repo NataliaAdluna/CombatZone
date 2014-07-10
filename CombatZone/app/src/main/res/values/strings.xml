@@ -27,5 +27,7 @@
     <string name="img">img</string>
     <string name="loadingVideo">Trwa ładowanie video, proszę czekać</string>
     <string name="title">tytul</string>
+    <string name="turned_on">WIFI włączone</string>
+    <string name="wifi_connection">Aplikacja wymaga połączenia z internetem</string>
 
 </resources>

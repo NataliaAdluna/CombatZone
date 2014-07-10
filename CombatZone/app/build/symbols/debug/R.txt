@@ -396,8 +396,10 @@ int string text 0x7f0a0021
 int string title 0x7f0a0022
 int string training 0x7f0a0023
 int string trainingLabel 0x7f0a0024
-int string video 0x7f0a0025
-int string videoLabel 0x7f0a0026
+int string turned_on 0x7f0a0025
+int string video 0x7f0a0026
+int string videoLabel 0x7f0a0027
+int string wifi_connection 0x7f0a0028
 int style AppTheme 0x7f0b0000
 int style TextAppearance_AppCompat_Base_CompactMenu_Dialog 0x7f0b0001
 int style TextAppearance_AppCompat_Base_SearchResult 0x7f0b0002

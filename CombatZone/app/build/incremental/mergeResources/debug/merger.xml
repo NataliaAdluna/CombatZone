@@ -8467,7 +8467,11 @@ true
                 </string>
                 <string name="title" >tytul
                 </string>
+                <string name="wifi_connection" >Aplikacja wymaga połączenia z internetem
+                </string>
                 <string name="video" >http://www.adluna.webd.pl/combatzone_panel/selectlinki.php
+                </string>
+                <string name="turned_on" >WIFI włączone
                 </string>
                 <string name="facebook" >https://www.facebook.com/pages/Combat-Zone/395073473912177?fref=ts
                 </string>

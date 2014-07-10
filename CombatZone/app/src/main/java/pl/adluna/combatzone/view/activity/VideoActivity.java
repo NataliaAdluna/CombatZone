@@ -91,9 +91,9 @@ public class VideoActivity extends Activity  {
 
 
                    ImageView im = new ImageView (context);
-                   im.setImageDrawable(getResources().getDrawable(R.drawable.youtube));
+                   //im.setImageDrawable(getResources().getDrawable(R.drawable.youtube));
                    //im.setPadding(5, 10, 0, 10);
-                   im.setBackground(pictureList.get(counter));
+                   im.setImageDrawable(pictureList.get(counter));
                    tr.addView(im, 150,110);
 
 

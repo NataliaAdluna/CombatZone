@@ -1097,8 +1097,10 @@ containing a value of this type.
         public static final int title=0x7f0a0022;
         public static final int training=0x7f0a0023;
         public static final int trainingLabel=0x7f0a0024;
-        public static final int video=0x7f0a0025;
-        public static final int videoLabel=0x7f0a0026;
+        public static final int turned_on=0x7f0a0025;
+        public static final int video=0x7f0a0026;
+        public static final int videoLabel=0x7f0a0027;
+        public static final int wifi_connection=0x7f0a0028;
     }
     public static final class style {
         public static final int AppTheme=0x7f0b0000;

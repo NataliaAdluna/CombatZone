@@ -569,8 +569,10 @@
     <string name="title">tytul</string>
     <string name="training">http://www.adluna.webd.pl/combatzone_panel/selecttreningi.php</string>
     <string name="trainingLabel">treningi</string>
+    <string name="turned_on">WIFI włączone</string>
     <string name="video">http://www.adluna.webd.pl/combatzone_panel/selectlinki.php</string>
     <string name="videoLabel">linki</string>
+    <string name="wifi_connection">Aplikacja wymaga połączenia z internetem</string>
     <!-- From: file:/home/nati/Adluna/CombatZone/app/src/main/res/values/styles.xml -->
     <eat-comment />
 

@@ -960,6 +960,8 @@ containing a value of this type.
         public static final int checkbox=0x7f07002d;
         public static final int collapseActionView=0x7f070011;
         public static final int default_activity_button=0x7f070028;
+        public static final int del1=0x7f070046;
+        public static final int del2=0x7f070048;
         public static final int dialog=0x7f070012;
         public static final int disableHome=0x7f070008;
         public static final int dropdown=0x7f070013;
@@ -968,8 +970,8 @@ containing a value of this type.
         public static final int expand_activities_button=0x7f070026;
         public static final int expanded_menu=0x7f07002c;
         public static final int facebook=0x7f07003f;
-        public static final int foto=0x7f070047;
-        public static final int gallery=0x7f07004b;
+        public static final int foto=0x7f070049;
+        public static final int gallery=0x7f07004d;
         public static final int home=0x7f070017;
         public static final int homeAsUp=0x7f070005;
         public static final int icon=0x7f07002a;
@@ -980,15 +982,15 @@ containing a value of this type.
         public static final int logo=0x7f07003c;
         public static final int menu_bottom=0x7f070044;
         public static final int middle=0x7f07000b;
-        public static final int movies=0x7f070046;
+        public static final int movies=0x7f070047;
         public static final int navigation=0x7f070045;
         public static final int never=0x7f07000d;
         public static final int news=0x7f07003e;
-        public static final int news_table=0x7f070048;
+        public static final int news_table=0x7f07004a;
         public static final int none=0x7f070009;
         public static final int normal=0x7f070000;
         public static final int page=0x7f070042;
-        public static final int picture_switcher=0x7f07004a;
+        public static final int picture_switcher=0x7f07004c;
         public static final int progress_circular=0x7f070018;
         public static final int progress_horizontal=0x7f070019;
         public static final int radio=0x7f07002f;
@@ -1003,7 +1005,7 @@ containing a value of this type.
         public static final int search_src_text=0x7f070037;
         public static final int search_voice_btn=0x7f07003b;
         public static final int seminar=0x7f070041;
-        public static final int seminar_text=0x7f07004c;
+        public static final int seminar_text=0x7f07004e;
         public static final int shortcut=0x7f07002e;
         public static final int showCustom=0x7f070007;
         public static final int showHome=0x7f070004;
@@ -1012,15 +1014,15 @@ containing a value of this type.
         public static final int submit_area=0x7f070039;
         public static final int tabMode=0x7f070002;
         public static final int title=0x7f07002b;
-        public static final int tmp=0x7f070049;
+        public static final int tmp=0x7f07004b;
         public static final int tmp1=0x7f07003d;
         public static final int tmp2=0x7f070043;
         public static final int top_action_bar=0x7f070020;
         public static final int training=0x7f070040;
-        public static final int training_table=0x7f07004d;
+        public static final int training_table=0x7f07004f;
         public static final int up=0x7f070021;
         public static final int useLogo=0x7f070003;
-        public static final int video_table=0x7f07004e;
+        public static final int video_table=0x7f070050;
         public static final int withText=0x7f070010;
     }
     public static final class integer {

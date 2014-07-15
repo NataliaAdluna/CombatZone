@@ -9,13 +9,13 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center_horizontal"
-        android:weightSum="8">
+        android:weightSum="9">
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="0dp"
             android:id="@+id/logo"
             android:src="@drawable/logo"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:adjustViewBounds="true"/>
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
@@ -32,7 +32,7 @@
                 android:layout_weight="1"/>
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:layout_weight="6"
                 android:weightSum="5"
@@ -91,26 +91,43 @@
             android:id="@+id/menu_bottom"
             android:background="#000000"
             android:adjustViewBounds="true"
-            android:weightSum="3"
+            android:weightSum="9"
             android:layout_weight="1"
             android:gravity="center_vertical|center_horizontal">
+
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:id="@+id/navigation"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:src="@drawable/navi"/>
+
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/del1"
+                android:adjustViewBounds="true"
+                android:layout_weight="2"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:id="@+id/movies"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
                 android:src="@drawable/play"/>
+
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:id="@+id/del2"
+                android:adjustViewBounds="true"
+                android:layout_weight="2"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:id="@+id/foto"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"

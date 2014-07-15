@@ -7,11 +7,14 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.Movie;
+import android.graphics.Point;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Base64;
+import android.util.DisplayMetrics;
+import android.view.Display;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
@@ -89,12 +92,16 @@ public class VideoActivity extends Activity  {
                     tr.setLayoutParams(new TableRow.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                             ViewGroup.LayoutParams.MATCH_PARENT));
 
+                   DisplayMetrics displaymetrics = new DisplayMetrics();
+                   getWindowManager().getDefaultDisplay().getMetrics(displaymetrics);
+                   int height = displaymetrics.heightPixels;
+                   int width = displaymetrics.widthPixels;
 
                    ImageView im = new ImageView (context);
                    //im.setImageDrawable(getResources().getDrawable(R.drawable.youtube));
-                   //im.setPadding(5, 10, 0, 10);
+                   im.setPadding(5, 10, 0, 10);
                    im.setImageDrawable(pictureList.get(counter));
-                   tr.addView(im, 150,110);
+                   tr.addView(im, width/3,height/6);
 
 
 
@@ -108,7 +115,7 @@ public class VideoActivity extends Activity  {
                     labelTitle.setSingleLine(false);
                     tr.addView(labelTitle);
 
-                    tr.setPadding(5,15,5,15);
+                  //  tr.setPadding(5,15,5,15);
                    final int finalCounter = counter;
                    tr.setOnClickListener(new View.OnClickListener() {
                        @Override

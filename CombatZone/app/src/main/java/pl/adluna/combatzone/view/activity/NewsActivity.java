@@ -13,6 +13,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Date;
 import java.util.List;
 
 import pl.adluna.combatzone.R;
@@ -44,21 +47,35 @@ public class NewsActivity extends Activity {
                     try {
                         JSONObject object = jArray.getJSONObject(i);
                         News news = new News();
-                        news.setDate(object.get(getString(R.string.dateLabel)).toString().substring(9,10)+"."+object.get(getString(R.string.dateLabel)).toString().substring(5,7));
+                        news.setStringDate(object.get(getString(R.string.dateLabel)).toString().substring(8,10)+"."+object.get(getString(R.string.dateLabel)).toString().substring(5,7));
+                        news.setDate(new Date(Integer.parseInt(object.get(getString(R.string.dateLabel)).toString().substring(0,4)),
+                                Integer.parseInt(object.get(getString(R.string.dateLabel)).toString().substring(5,7)),
+                                Integer.parseInt(object.get(getString(R.string.dateLabel)).toString().substring(0,4))));
                         news.setText(object.get(getString(R.string.text)).toString());
                         newsList.add(news);
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
+
+
+                Collections.sort(newsList, new Comparator<News>() {
+                    @Override
+                    public int compare(News news, News news2) {
+                        return (int) (news.getDate().getTime()-news2.getDate().getTime());
+                    }
+                });
+
+
                 for (News news : newsList) {
-                    String date = news.getDate();
+                    String date = news.getStringDate();
                     String info = news.getText();
 
                     TableRow tr = new TableRow(con);
 
                     TextView labelDATE = new TextView(con);
                     labelDATE.setText(date);
+
                     labelDATE.setPadding(0, 0, 6, 0);
                     labelDATE.setTextColor(Color.BLACK);
                     labelDATE.setTextSize(15);
@@ -75,6 +92,7 @@ public class NewsActivity extends Activity {
                     labelNEWS.setEllipsize(null);
                     labelNEWS.setMaxLines(2);
                     labelNEWS.setSingleLine(false);
+                    labelNEWS.setPadding(0,0,0,10);
                     tr.addView(labelNEWS);
 
                     tableLayout.addView(tr, new TableLayout.LayoutParams(

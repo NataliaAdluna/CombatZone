@@ -29,5 +29,6 @@
     <string name="title">tytul</string>
     <string name="turned_on">WIFI włączone</string>
     <string name="wifi_connection">Aplikacja wymaga połączenia z internetem</string>
+    <string name="error_config">Error config</string>
 
 </resources>
